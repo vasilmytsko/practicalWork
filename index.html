@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+    <div id="container" onselectstart="return false">
+        <div id="header">
+            <div id="mainFirstBlock">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nesciunt, voluptatibus quia. Soluta maxime, rem cumque, et assumenda omnis sunt nobis ullam unde explicabo sed dignissimos, aliquam dolore? Quibusdam velit, autem eius quis ipsam mollitia harum deleniti repellat recusandae eos culpa libero eveniet doloribus saepe magnam illum earum quae ratione obcaecati ducimus sed debitis aliquid! Et possimus dolor dolores maiores debitis. Sapiente ipsum corporis dicta accusantium consectetur voluptas cum, ad error laboriosam quae et veritatis repellendus excepturi minima doloribus fugit non impedit exercitationem inventore quis vero aliquid distinctio illum quaerat rem. Illo voluptatum tenetur dicta repellat vero. Corporis incidunt qui, non quo. Labore voluptatum quasi molestiae, alias officiis distinctio rem sed aliquam, quis dolor impedit recusandae explicabo perspiciatis corrupti. Animi porro nisi soluta, culpa quibusdam. Perspiciatis eum hic sed commodi cum est numquam rem, tempore nostrum aliquid, cumque quidem laudantium laboriosam in possimus modi deleniti expedita recusandae quod sit ipsum unde! Perferendis maiores accusantium nulla itaque eligendi eaque delectus placeat, repellendus reprehenderit minus sapiente praesentium dolore omnis mollitia nisi at tempora quibusdam dolores consequatur expedita pariatur. Quo porro in et quis impedit dolorum illo expedita suscipit neque odit ex sint molestias est totam beatae sapiente deserunt, praesentium mollitia, eaque, animi!</div>
+            <div id="nav">
+                <form action="#" name="f1">
+                    <input type="button" value="Редагувати" class="cnopa" id="edit">
+                    <input type="button" value="Стилізувати" class="cnopa" id="stylez"> </form>
+            </div>
+            <!--   блок стилів     -->
+            <div id="mainSecondBlock">
+                <div id="textarea">
+                    <textarea name="" id="area" cols="110" rows="22"></textarea>
+                    <p>
+                        <input type="button" id="save" value="Зберегти" class="cnopa">
+                        <input type="button" id="add" value="Додати" class="cnopa"> </p>
+                </div>
+                <div id="blockStyle">
+                    <form action="#" name="rBtn"> Розмір тексту:
+                        <label>
+                            <input type="radio" name="r" value="14px" checked>14px</label>
+                        <label>
+                            <input type="radio" name="r" value="16px">16px</label>
+                        <label>
+                            <input type="radio" name="r" value="18px">18px</label>
+                        <label>
+                            <input type="radio" name="r" value="20px">20px</label>
+                        <label>
+                            <input type="radio" name="r" value="22px">22px</label>
+                    </form>
+                    <br>
+                    <br>
+                    <form>Шрифт:
+                        <select id="listFontFamyli" class="cnopa">
+                            <option value="Arial">Arial</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Verdana">Verdana</option>
+                        </select>
+                    </form>
+                    <br>
+                    <form name="f1">
+                        <input type="button" id="colorText" value="Колір тексту" class="cnopa color-style">
+                        <input type="button" id="colorBackground" value="Колір фону" class="cnopa color-style"> </form>
+                    <br>
+                    <div id="squareColorText">
+                        <div class="boxText" style='background:red;'></div>
+                        <div class="boxText" style='background:green;'></div>
+                        <div class="boxText" style='background:blue;'></div>
+                        <div class="boxText" style='background:yellow;'></div>
+                        <div class="boxText" style='background:brown;'></div>
+                        <div class="boxText" style='background:orange;'></div>
+                        <div class="boxText" style='background:violet;'></div>
+                        <div class="boxText" style='background:purple;'></div>
+                        <div class="boxText" style='background:springgreen;'></div>
+                    </div>
+                    <div id="squareColorBackground">
+                        <div class="boxBackground" style='background:red;'></div>
+                        <div class="boxBackground" style='background:green;'></div>
+                        <div class="boxBackground" style='background:blue;'></div>
+                        <div class="boxBackground" style='background:yellow;'></div>
+                        <div class="boxBackground" style='background:brown;'></div>
+                        <div class="boxBackground" style='background:orange;'></div>
+                        <div class="boxBackground" style='background:coral;'></div>
+                        <div class="boxBackground" style='background:purple;'></div>
+                        <div class="boxBackground" style='background:springgreen;'></div>
+                    </div>
+                    <form action="#" name="checkboxTextBold">
+                        <label>
+                            <input type="checkbox" name="ctb" value="bold">Жирний текст</label>
+                    </form>
+                    <form action="#" name="checkboxTextItalic">
+                        <label>
+                            <input type="checkbox" name="cti" value="italic">Курсив</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--   Таблиця + список     -->
+        <div id="footer">
+            <div id="blockTableItem">
+                <h1>Виберіть, що саме ви хочите добавити:</h1>
+                <form action="#" name="rBtnChoose">
+                    <label>
+                        <input type="radio" name="r" checked value="table">Таблиця</label>
+                    <label>
+                        <input type="radio" name="r" value="item">Список</label>
+                </form>
+                <div id="blockTabl">
+                    <form action="#" name="rBtnTab">
+                        <p>Введіть кількість рядків таблиці:
+                            <input type="text" class="cnopa cell" id="tr"> </p>
+                        <p>Введіть кількість стовбців таблиці:
+                            <input type="text" class="cnopa cell" id="td"> </p>
+                    </form>
+                    <h3>Стилі для таблиці:</h3>
+                    <form action="#" name="rBtnTabStyle">
+                        <p>Введіть ширину ячейки таблиці:
+                            <input type="text" class="cnopa cell" id="wightTd"> </p>
+                        <p>Введіть висоту ячейки таблиці::
+                            <input type="text" class="cnopa cell" id="hightTd"> </p>
+                        <p>Введіть товщину лінії таблиці::
+                            <input type="text" class="cnopa cell" id="borderLine"> </p> <span>Тип лінії таблиці:</span>
+                        <select id="listBorderLine" class="cnopa">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="double">double</option>
+                        </select> <span>Колір лінії таблиці:</span>
+                        <select id="listColorLine" class="cnopa type-line">
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="yellow">yellow</option>
+                        </select>
+                        <p>
+                            <input type="button" value="Створити таблицю" class="cnopa create"  id="createTable"> </p>
+                    </form>
+                </div>
+                <div id="blockItem">
+                    <form action="#" name="rBtnItem">
+                        <p>Введіть кількість елементів списку:
+                            <input type="text" class="cnopa cell" id="elem"> </p> <span>Тип маркування:</span>
+                        <select id="listTypeItem" class="cnopa">
+                            <option value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                        <p>
+                            <input type="button" value="Створити список" class="cnopa create" name="push" id="createItem"> </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
